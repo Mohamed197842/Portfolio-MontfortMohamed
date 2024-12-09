@@ -1,0 +1,61 @@
+.flip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+.react-card-flip {
+  width: 100%;
+}
+.card {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+}
+
+.front {
+  background-color: black;
+}
+
+.back {
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card p {
+  font-size: 1rem;
+  color: white;
+}
+
+.back ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.back ul li {
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black; /* Couleur ajustée pour le texte sur fond blanc */
+}
+
+@media screen and (max-width: 764px) {
+  .flip-container {
+    width: 100%;
+  }
+}

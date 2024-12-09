@@ -1,0 +1,105 @@
+.modale-details-projets {
+  max-width: 1000px;
+  margin: 0 auto;
+  max-height: 90vh; /* Limite la hauteur totale de la modale */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: white; /* Couleur de fond pour le formulaire */
+  color: black;
+  padding: 20px;
+  gap: 20px;
+  overflow-y: auto; /* Ajoute un défilement si le contenu dépasse la hauteur max */
+}
+
+.modale-details-projets .title {
+  margin: 0 auto;
+  font-size: 28px;
+  text-align: center; /* Centrer le titre */
+}
+
+.modale-details-projets p {
+  font-size: 18px;
+}
+
+.modale-details-projets .tags-list {
+  display: flex;
+  flex-wrap: wrap; /* Les tags se répartissent sur plusieurs lignes si nécessaire */
+  gap: 15px; /* Ajustement de l'espace entre les tags */
+  margin: 0 auto 20px auto;
+}
+
+.tag {
+  background-color: black;
+  color: white;
+  padding: 8px 12px; /* Padding réduit pour une meilleure responsivité */
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.code-source {
+  width: fit-content;
+  display: flex;
+  gap: 8px; /* Réduction de l'espace entre les éléments */
+  font-size: 18px;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-decoration: underline;
+}
+.code-source:hover {
+  color: #007bff;
+}
+
+.image-demo {
+  display: grid; /* Passage en grille pour une meilleure gestion des images */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Colonnes adaptatives */
+  gap: 10px; /* Espacement entre les images */
+}
+
+.image-demo img {
+  width: 100%; /* Les images prennent toute la largeur de leur colonne */
+  height: 300px; /* Hauteur maximale pour éviter les débordements */
+  object-fit: cover; /* Adapter l'image au conteneur sans la déformer */
+  border-radius: 8px; /* Coins arrondis pour un style plus doux */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Ombre pour plus de profondeur */
+}
+
+@media screen and (max-width: 600px) {
+  .modale-details-projets {
+    max-width: 90%; /* Réduire la largeur pour les petits écrans */
+    padding: 15px; /* Réduire le padding */
+  }
+
+  .modale-details-projets .title {
+    font-size: 24px; /* Réduire la taille de la police */
+  }
+
+  .modale-details-projets p {
+    font-size: 16px; /* Ajuster la taille de la police */
+  }
+
+  .modale-details-projets .tags-list {
+    gap: 10px; /* Réduire l'espacement entre les tags */
+  }
+
+  .tag {
+    font-size: 14px; /* Réduction de la taille de la police des tags */
+    padding: 6px 10px; /* Ajustement du padding pour plus de compacité */
+  }
+
+  .code-source {
+    font-size: 16px; /* Réduction de la taille de la police */
+    gap: 5px; /* Réduction de l'espacement entre les éléments */
+  }
+
+  .image-demo img {
+    max-height: 150px; /* Réduction de la hauteur maximale des images */
+  }
+}

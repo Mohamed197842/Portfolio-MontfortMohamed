@@ -1,0 +1,147 @@
+.accueil {
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  min-height: 80vh; /* Ne prend pas toute la page mais reste grande */
+  gap: 350px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bar {
+  width: 4px;
+  height: 290px;
+  background-color: #eeeeee;
+  position: relative; /* Nécessaire pour que l'élément ::before soit positionné correctement */
+}
+
+.bar::before {
+  content: "";
+  width: 100%; /* La petite barre prend la même largeur que la barre principale */
+  height: 64px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: translationY 2.5s ease infinite;
+}
+
+@keyframes translationY {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 78%;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 24px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: black;
+}
+
+.contact {
+  padding: 10px;
+  border: transparent;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.link-project {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre la flèche et le texte */
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.link-project:hover {
+  color: #0077b5; /* Change la couleur lors du hover */
+}
+
+.arrow-icon {
+  font-size: 24px;
+}
+
+/* Conteneur avec perspective 3D */
+.rotating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Ajuste selon ton design */
+  perspective: 1000px; /* Donne de la profondeur */
+}
+
+/* Image avec rotation 3D */
+.rotating-image-3d {
+  width: 350px; /* Taille de l'image */
+  animation: spin-3d 8s infinite linear; /* Animation continue */
+  transform-origin: center; /* Rotation autour du centre */
+}
+
+/* Animation 3D */
+@keyframes spin-3d {
+  from {
+    transform: rotateY(0deg); /* Départ face avant */
+  }
+  to {
+    transform: rotateY(360deg); /* Rotation complète */
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .accueil {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .rotating-container {
+    display: none; /* Cache l'image de rotation */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .link-project {
+    flex-direction: column;
+  }
+}

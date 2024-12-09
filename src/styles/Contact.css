@@ -1,0 +1,11 @@
+.contact-section {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1480px) {
+  .contact-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

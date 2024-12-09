@@ -1,0 +1,27 @@
+.compétences-section {
+  max-width: 1480px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.skills-cards {
+  display: flex;
+  width: 100%;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1480px) {
+  .compétences-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .skills-cards {
+    flex-direction: column;
+  }
+}

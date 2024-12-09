@@ -1,0 +1,42 @@
+.form-contact {
+  max-width: 700px;
+  margin: 50px auto;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 5px;
+  border: solid 1px;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+textarea {
+  height: 60px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.sendForm {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 20px auto;
+  color: white;
+  background-color: black;
+  border: transparent;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}

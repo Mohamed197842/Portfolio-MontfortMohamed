@@ -1,0 +1,114 @@
+.add-projet {
+  position: relative;
+  max-width: 630px;
+  height: 670px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: white; /* Couleur de fond pour le formulaire */
+  z-index: 1001; /* Assurez-vous que le formulaire est au-dessus de l'overlay */
+}
+
+/* Formulaire */
+.form-projets {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+input,
+textarea,
+select {
+  height: 40px; /* Un peu plus grand pour la lisibilité */
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  border: solid 1px #ccc;
+  width: 100%; /* S'assurer que les champs prennent toute la largeur disponible */
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px; /* Ajouter de la marge en bas pour espacer le label du champ */
+  display: block; /* Assure que le label occupe toute la ligne */
+}
+
+textarea {
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.form-projets button {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 20px auto;
+  color: white;
+  background-color: black;
+  border: transparent;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-projets p {
+  font-size: 14px;
+}
+
+.add-projet .close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.return {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: fit-content;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+.ajout-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8f1f6;
+  border-radius: 3px;
+}
+
+.ajout-image label {
+  background-color: #cbd6dc;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #306685;
+  text-align: center;
+  padding: 10px 33px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.ajout-image input {
+  display: none;
+}
+
+#icon-image {
+  font-size: 65px;
+  color: #b9c5cc;
+  margin-top: 20px;
+}
+
+.ajout-image p {
+  margin-bottom: 20px;
+  font-size: 12px;
+}

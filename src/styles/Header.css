@@ -1,0 +1,110 @@
+/* Style général pour la navbar */
+.header {
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.navbar {
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre subtile */
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+}
+
+/* Style de base pour le menu sur grand écran */
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logOut {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 18px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.closeMenu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* Responsive pour tablettes et petits écrans */
+@media screen and (max-width: 520px) {
+  .navbar li {
+    font-size: 14px;
+  }
+}
+
+/* Style pour les petits écrans (450px et moins) */
+@media screen and (max-width: 450px) {
+  .navbar {
+    padding: 10px;
+    align-items: center; /* Centre verticalement */
+  }
+
+  .navbar ul {
+    display: none; /* Menu caché par défaut */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.97);
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Affiche le menu lorsqu'il est ouvert */
+  .navbar ul.open {
+    display: flex; /* Affiche le menu lorsqu'il a la classe "open" */
+  }
+
+  .navbar li {
+    font-size: 25px; /* Taille de police plus grande pour plus de visibilité */
+    padding: 15px 0; /* Plus d'espace entre les éléments */
+    text-align: center;
+    color: white;
+  }
+
+  /* Bouton hamburger */
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px; /* Taille du bouton hamburger plus grande */
+    cursor: pointer;
+    z-index: 10;
+  }
+}
