@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { Link } from "react-scroll";
 import "../styles/accueil.css";

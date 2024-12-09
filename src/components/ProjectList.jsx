@@ -4,14 +4,26 @@ import ProjetsPage from "./ProjetsPage";
 import FilterList from "./FilterList"; // Importation de FilterList
 import "../styles/ProjectList.css";
 
-export default function ProjectList({
-  projects,
-  categories,
-  selectedCategory,
-  setSelectedCategory,
-}) {
+// Importer les fichiers JSON locaux
+import projectsData from "../data/Projets.json"; // Chemin vers tes projets
+import categoriesData from "../data/Categories.json"; // Chemin vers tes catégories
+
+export default function ProjectList() {
+  const [projects, setProjects] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    try {
+      // Charger les projets et les catégories depuis les fichiers JSON
+      setProjects(projectsData);
+      setCategories(categoriesData); // Charger les catégories ici
+    } catch (err) {
+      setError("Erreur lors du chargement des projets ou des catégories");
+    }
+  }, []);
 
   // Filtrer les projets en fonction de la catégorie sélectionnée
   const filteredProjects = selectedCategory
@@ -29,20 +41,19 @@ export default function ProjectList({
   return (
     <div className="projets">
       <FilterList
-        categories={categories}
+        categories={categories} // Passer les catégories ici
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
       <div className="project-list">
         {error && <p className="error">{error}</p>}
-        {/* Intégrer FilterList dans ProjectList */}
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}
               id={project.id}
               title={project.title}
-              cover={project.imageUrl}
+              cover={project.cover}
               description={project.description}
               onClick={() => handleProjectClick(project)}
             />
@@ -56,7 +67,7 @@ export default function ProjectList({
               id={selectedProject.id}
               title={selectedProject.title}
               descriptionMission={selectedProject.descriptionMission}
-              imageDemo={selectedProject.imageDémo}
+              imageDemo={selectedProject.imageDemo}
               tags={selectedProject.tags}
               url={selectedProject.url}
               closeModal={closeModal}

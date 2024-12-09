@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "Booki",
+    "cover": "https://vbgwebdev.fr/wp-content/uploads/2023/09/booki.png",
+    "description": "Site de recherche de logements et d'activités",
+    "descriptionMission": "Intégration de la page d'accueil en front-end (HTML/CSS) pour un site de recherche de logements et d'activités. Création d'une interface utilisateur attrayante et responsive, incluant des sections de recherche de logements et d'activités.",
+    "imageDemo": [
+      "https://i.postimg.cc/Y9h4jqDx/Capture-d-cran-2024-11-21-122748.webp",
+      "https://i.postimg.cc/QC8ycw5S/Capture-d-cran-2024-11-21-122804.webp"
+    ],
+    "tags": ["Front-end", "HTML/CSS", "Responsive"],
+    "url": "https://github.com/Mohamed197842/Projet2-Booki",
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "title": "Sophie Bluel",
+    "cover": "https://i.postimg.cc/MHFfcjXH/Capture-d-cran-2024-11-20-134214.webp",
+    "description": "Portfolio d'une architecte d'intérieur",
+    "descriptionMission": "Développement de l'interface front-end du site avec une intégration fluide à une API. Mise en place d'une page de connexion et de fonctionnalités dédiées à l'administrateur, incluant une modale pour l'édition et l'ajout de projets.",
+    "imageDemo": [
+      "https://i.postimg.cc/MHFfcjXH/Capture-d-cran-2024-11-20-134214.webp",
+      "https://i.postimg.cc/sXvsVxf9/Capture-d-cran-2024-11-21-123744.webp",
+      "https://i.postimg.cc/3JH5qnGZ/Capture-d-cran-2024-11-21-124011.webp"
+    ],
+    "tags": ["Front-end", "Javascript", "API", "HTML/CSS"],
+    "url": "https://github.com/Mohamed197842/Projet-OC-SophieBluel",
+    "categoryId": 1
+  },
+  {
+    "id": 3,
+    "title": "Kasa",
+    "cover": "https://i.postimg.cc/jj8ykczL/Capture-d-cran-2024-11-20-151820.webp",
+    "description": "Plateforme de location d'appartements",
+    "descriptionMission": "Développement du site avec React et SASS. Création d'une interface modulaire, responsive et dynamique, alimentée par des données en format JSON. Ajout d'animations CSS pour rendre la navigation plus fluide et agréable pour les utilisateurs.",
+    "imageDemo": [
+      "https://i.postimg.cc/jj8ykczL/Capture-d-cran-2024-11-20-151820.webp",
+      "https://i.postimg.cc/KvYJGKYX/Capture-d-cran-2024-11-20-151621.webp"
+    ],
+    "tags": ["Front-end", "React", "Vite", "Sass"],
+    "url": "https://github.com/Mohamed197842/Projet-OC-Kasa",
+    "categoryId": 1
+  },
+  {
+    "id": 4,
+    "title": "Nina Carducci",
+    "cover": "https://i.postimg.cc/jjzbq6vQ/Capture-d-cran-2024-11-21-122115.webp",
+    "description": "Site vitrine d'une photographe",
+    "descriptionMission": "Chargé d'optimiser un site web sur plusieurs aspects, notamment le SEO, l'accessibilité et les performances. Cela inclut la résolution de bugs CSS et JavaScript, l'amélioration des temps de chargement, l'optimisation pour l'accessibilité et l'obtention d'un score Lighthouse d'au moins 90 pour les versions mobile et desktop.",
+    "imageDemo": [
+      "https://i.postimg.cc/jjzbq6vQ/Capture-d-cran-2024-11-21-122115.webp",
+      "https://i.postimg.cc/VLS2LBkr/Capture-d-cran-2024-11-21-122051.webp"
+    ],
+    "tags": [
+      "Optimisation",
+      "SEO",
+      "Accessibilité",
+      "Performances",
+      "Lighthouse",
+      "Référencement"
+    ],
+    "url": "https://github.com/Mohamed197842/Projet-4-Nina-carducci",
+    "categoryId": 3
+  },
+  {
+    "id": 5,
+    "title": "Mon vieux Grimmoire",
+    "cover": "https://i.postimg.cc/XYZ5vR4w/Capture-d-cran-2024-11-21-131048.png",
+    "description": "Site de référencement et de notation de livres",
+    "descriptionMission": "Développement du backend avec un serveur Node.js utilisant Express. Création d'une API CRUD permettant l'ajout, la modification ou la suppression d'un ou plusieurs livres, ainsi que l'intégration d'un système d'authentification sécurisé.",
+    "imageDemo": [
+      "https://i.postimg.cc/ZqGgBxrR/Capture-d-cran-2024-11-06-135334.webp",
+      "https://i.postimg.cc/vTWXJ7n1/Capture-d-cran-2024-11-21-124353.webp",
+      "https://i.postimg.cc/1XGZ5Y2s/Capture-d-cran-2024-11-21-124518.webp"
+    ],
+    "tags": ["Back-end", "Nodes.Js", "Express", "API REST", "CRUD"],
+    "url": "https://github.com/Mohamed197842/Projet6-MonVieuxGrimmoire",
+    "categoryId": 2
+  }
+]

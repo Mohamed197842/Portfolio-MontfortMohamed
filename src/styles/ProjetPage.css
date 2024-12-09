@@ -70,6 +70,13 @@
   border-radius: 8px; /* Coins arrondis pour un style plus doux */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Ombre pour plus de profondeur */
 }
+.modale-details-projets .close-modal {
+  background: none;
+  border: none;
+  font-size: 24px;
+  width: fit-content;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
   .modale-details-projets {

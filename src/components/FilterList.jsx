@@ -14,7 +14,7 @@ export default function FilterList({
             onClick={() => setSelectedCategory(category)} // Met à jour la catégorie sélectionnée
             className={selectedCategory?.id === category.id ? "active" : ""}
           >
-            {category.name} {/* Utilisez le nom de la catégorie ici */}
+            {category.name} {/* Utilise le nom de la catégorie */}
           </button>
         </li>
       ))}
